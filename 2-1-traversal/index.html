@@ -156,10 +156,29 @@
     // 兄弟層(next(), nextAll(), prev(), prevAll(), siblings())
     // $("#Now").click(function(){
     //   $(this).nextAll().css("background-color","pink")
+    //   $(this).siblings().first().css("background-color","pink")
+    // 索引值由0開始
+    //   $(this).siblings().eq(2).css("background-color","pink")
     // });
+    
+   
+
+    // 父層(.parent(), .parents() )
     $("#Now").click(function(){
-      $(this).siblings().first().css("background-color","pink")
+      // $(this).parent().siblings().css("background-color","pink")
+      // $(this).parent().siblings().eq(2).find("li").eq(2).css("background-color","pink")
+      // filter(":odd")，注意要加冒號
+      // $(this).parent().siblings().eq(2).find("li").filter(":even").css("background-color","pink")
+      $(this).parent().siblings().has("li").css("background-color","pink")
+
+
+
+      // 也可宣告變數
+      // const $parent = $(this).parent()
+      // const $parentSiblings = $parent.siblings()
+      // $parentSiblings.eq(2).find("li").filter(":even").css("background-color","pink")
     });
+
 
   </script>
 </body>
