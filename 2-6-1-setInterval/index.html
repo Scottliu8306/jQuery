@@ -12,6 +12,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 
+		let num = 100;
+		// setInterval(function(){
+		// 	num++;
+		// 	console.log(num);
+		// 	$("body").html(`<h1>${num}</h1>`)
+		// },1000)
+
+
+		// 方法一
+		// setInterval(function(){
+		// 		num--;
+		// 		console.log(num);
+		// 		$("body").html(`<h1>${num}</h1>`)
+		// 	},5 00)
+
+
+		// 方法二
+		function todo() {
+			num--;
+			console.log(num);
+			$("body").html(`<h1>${num}</h1>`)
+		}
+
+		setInterval(todo, 1000)
+
+
 	</script>
 </body>
 
